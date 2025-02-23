@@ -19,8 +19,8 @@ public class InvestmentController {
         this.investmentRepository = investmentRepository;
     }
 
-    @GetMapping("/{userId")
+    @GetMapping("/{userId}")
     public ResponseEntity<List<Investment>> getInvestment(@PathVariable("userId") int userId) {
-        return ResponseEntity.ok(investmentRepository.findbyUserId(userId));
+        return ResponseEntity.ok(investmentRepository.findByUserId(userId));
     }
 }
