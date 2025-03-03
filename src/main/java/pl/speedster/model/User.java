@@ -26,6 +26,16 @@ public class User implements UserDetails {
 
     private String email;
 
+    public User(String username, String password, String email) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+    }
+
+    public User() {
+
+    }
+
     public String getUsername() {   //TODO czemu muszą byc jawne gettery i settery
         return username;
     }
